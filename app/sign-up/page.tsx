@@ -2,8 +2,6 @@
 import logo from "@/public/images/logo.png";
 import Image from "next/image";
 
-
-
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
@@ -32,7 +30,7 @@ export default function SignUpPage() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-white font-sans flex items-center justify-center">
       {/* Background */}
-      <Image src={logo} alt="logo" />
+      {/* <Image src={logo} alt="logo" /> */}
 
       {/* Back button */}
       <button
@@ -47,8 +45,9 @@ export default function SignUpPage() {
       <div className="relative z-10 flex items-center justify-center w-full h-full px-4">
         <div className="bg-white rounded-xl p-9 w-full max-w-[440px] shadow-[0_4px_32px_rgba(0,0,0,0.10)] flex flex-col items-center">
           {/* Logo */}
-          <div className="mb-3">
-            <RDLogo size={72} />
+          <div className="mb-3 flex justify-center">
+            <Image width={500} src={logo} alt="logo" />
+            {/* <RDLogo size={72} /> */}
           </div>
 
           {/* Title */}
